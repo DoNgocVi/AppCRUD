@@ -95,14 +95,14 @@ export default {
       if (formIsValid) {
         this.createCity();
       }
-      console.log(this.error);
+    
     },
 
     async createCity() {
-      console.log("creating document");
+    
       const addedDoc = await addDoc(citiesColRef, this.$data.cities);
       alert("document create successfully");
-      console.log(addedDoc);
+     
       this.$router.push("/");
     },
   },
