@@ -60,7 +60,6 @@ export default {
     async getCity() {
       this.docRef = doc(citiesColRef, this.cityId);
       let city = await getDoc(this.docRef);
-      console.log(city.data());
       let cityData = city.data();
       this.cityInfo.name = cityData.name;
       this.cityInfo.county = cityData.county;
